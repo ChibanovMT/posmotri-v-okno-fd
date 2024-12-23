@@ -101,11 +101,13 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   height: 400px;
   overflow-y: auto;
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 368px;
   overflow: hidden;
@@ -121,12 +123,14 @@ ol {
 .content__list {
   display: grid;
   gap: 30px;
+  margin-right: 3px;
 }
 
 .content__video-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  outline: none;
 }
 
 .content__video-card-thumbnail {
@@ -285,4 +289,72 @@ ol {
 
 .search-form__label:hover {
   text-decoration: underline;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 17px;
+  line-height: 21.6px;
+  padding: 6px 73.5px;
+  cursor: pointer;
+  margin-top: 17px;
+}
+
+.search-form__submit-button {
+  background-color: #1b1919;
+}
+
+.more-button {
+  width: 99%;
+  background-color: #1b1919;
+  margin: 30px 0px 2px 2px;
+  padding: 6px 132px;
+}
+
+.button,
+.search-form__submit-button,
+.more-button {
+  outline: none; /* Сброс стандартного фокуса */
+}
+
+.button:hover,
+.search-form__submit-button:hover,
+.more-button:hover {
+  text-decoration: underline;
+}
+
+.button:active,
+.search-form__submit-button:active,
+.more-button:active {
+  background-color: #545050;
+  color: #fff;
+}
+
+.button:focus-visible,
+.search-form__submit-button:focus-visible,
+.more-button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card:hover .content__video-card-title,
+.content__video-card:hover .content__video-card-description {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
 }
