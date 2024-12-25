@@ -270,7 +270,6 @@ ol {
   height: 13px;
   background-color: #fff;
   opacity: 1;
-  position: absolute;
   top: 44%;
   left: 49%;
   transform: translate(-46%, -45%);
@@ -365,6 +364,6 @@ ol {
   padding-right: 3px;
 }
 
-.content__list-item:active{
+.content__list-item:active {
   background-color: #545050;
 }
